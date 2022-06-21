@@ -64,12 +64,12 @@ function ToggleVehicleLock()
 				SetVehicleDoorsLocked(vehicle, 2)
 				PlayVehicleDoorCloseSound(vehicle, 1)
 
-				TriggerEvent("ampora_notify", "red", "", "Fahrzeug zugeschlossen!")
+				TriggerEvent("notifications", "red", "", "Fahrzeug zugeschlossen!")
 			elseif lockStatus == 2 then -- locked
 				SetVehicleDoorsLocked(vehicle, 1)
 				PlayVehicleDoorOpenSound(vehicle, 0)
 
-				TriggerEvent("ampora_notify", "green", "", "Fahrzeug aufgeschlossen!")
+				TriggerEvent("notifications", "green", "", "Fahrzeug aufgeschlossen!")
 			end
 		end
 
